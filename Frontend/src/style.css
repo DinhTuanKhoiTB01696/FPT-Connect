@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Color tokens (Bible 10.2) — RGB channels để Tailwind dùng alpha. */
+:root {
+  --background: 248 250 252;
+  --surface: 255 255 255;
+  --foreground: 15 23 42;
+  --muted: 100 116 139;
+  --primary: 249 115 22;
+  --secondary: 37 99 235;
+  --success: 21 128 61;
+  --warning: 180 83 9;
+  --danger: 185 28 28;
+  --border: 226 232 240;
+}
+.dark {
+  --background: 11 18 32;
+  --surface: 17 24 39;
+  --foreground: 248 250 252;
+  --muted: 148 163 184;
+  --primary: 251 146 60;
+  --secondary: 96 165 250;
+  --success: 74 222 128;
+  --warning: 251 191 36;
+  --danger: 248 113 113;
+  --border: 51 65 85;
+}
+body { @apply bg-background text-foreground font-sans antialiased; }

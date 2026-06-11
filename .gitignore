@@ -1,0 +1,43 @@
+# ---------- .NET ----------
+bin/
+obj/
+*.user
+*.suo
+.vs/
+artifacts/
+publish/
+*.dll
+*.pdb
+appsettings.*.local.json
+
+# ---------- Node / Vue ----------
+node_modules/
+Frontend/dist/
+Frontend/.vite/
+npm-debug.log*
+yarn-error.log*
+.env
+.env.local
+Frontend/.env
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# ---------- Secrets ----------
+*.pfx
+*.key
+secrets.json
+
+# ---------- Build/test output ----------
+TestResults/
+coverage/
+*.trx
+
+# ---------- Office temp ----------
+~$*.docx
+~$*.xlsx
+~$*.pptx
