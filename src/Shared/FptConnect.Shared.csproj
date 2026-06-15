@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>FptConnect.Shared</RootNamespace>
+    <AssemblyName>FptConnect.Shared</AssemblyName>
+  </PropertyGroup>
+</Project>

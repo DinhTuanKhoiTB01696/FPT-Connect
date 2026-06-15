@@ -18,8 +18,12 @@ public static class DependencyInjection
             opt.UseSqlServer(conn, sql => sql.MigrationsAssembly(typeof(AppDbContext).Assembly.FullName)));
 
         services.AddScoped<IAppDbContext>(sp => sp.GetRequiredService<AppDbContext>());
+
+        services.AddSingleton<IClock, SystemClock>();
         services.AddSingleton<IPasswordHasher, BcryptPasswordHasher>();
+        services.AddSingleton<ITotpService, TotpService>();
         services.AddScoped<IJwtTokenService, JwtTokenService>();
+        services.AddScoped<IAuditWriter, AuditWriter>();
         return services;
     }
 }

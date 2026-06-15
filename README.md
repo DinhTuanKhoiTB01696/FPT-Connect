@@ -9,7 +9,7 @@ Hệ thống CRM theo vị trí + quản lý nhân viên hiện trường: GPS t
 
 | Lớp | Stack |
 |---|---|
-| Backend | .NET 8, ASP.NET Core, EF Core, Clean Architecture, SQL Server |
+| Backend | .NET 10, ASP.NET Core, EF Core, Clean Architecture, SQL Server |
 | Frontend | Vue 3, Vite, TypeScript, TailwindCSS, Pinia |
 | Hạ tầng | Docker, GitHub Actions CI/CD, Serilog |
 
@@ -34,7 +34,7 @@ FPT CONNECT/
 
 ## Yêu cầu
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download)
 - [Node.js 22+](https://nodejs.org)
 - SQL Server (LocalDB / Express / full) + `sqlcmd`
 - EF Core tools: `dotnet tool install --global dotnet-ef`

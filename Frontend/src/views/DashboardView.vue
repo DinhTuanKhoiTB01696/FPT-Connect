@@ -18,8 +18,8 @@ onMounted(async () => {
   }
 })
 
-function logout() {
-  auth.logout()
+async function logout() {
+  await auth.logout('current')
   router.push({ name: 'login' })
 }
 </script>
@@ -31,6 +31,9 @@ function logout() {
         <h1 class="text-lg font-medium text-foreground">FPT Connect</h1>
         <div class="flex items-center gap-3 text-sm">
           <span class="text-muted">{{ auth.user?.name }}</span>
+          <RouterLink :to="{ name: 'profile' }" class="rounded-control border border-border px-3 py-1 text-foreground">
+            Hồ sơ
+          </RouterLink>
           <button class="rounded-control border border-border px-3 py-1 text-foreground" @click="logout">
             Đăng xuất
           </button>

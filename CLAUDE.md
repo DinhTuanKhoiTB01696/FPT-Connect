@@ -11,7 +11,7 @@
 ## Kiến trúc (tóm tắt — chi tiết ở docs/Project-Bible/07_Architecture.md)
 
 - Backend: .NET 8, Clean Architecture — `Backend/src/FptConnect.{Domain,Application,Infrastructure,Api,Worker}`.
-- Frontend: Vue 3 + Vite + TypeScript + TailwindCSS + Pinia — `Frontend/`.
+- Frontend: Vue 3 + Vite + TypeScript + TailwindCSS + shadcn-vue + Pinia — `Frontend/`.
 - DB: SQL Server, EF Core, schema theo bounded context (`iam`, `crm`, `field`, `ops`, `notify`, `audit`, `ai`).
 - Quy tắc phụ thuộc: `Domain <- Application <- Infrastructure/Api/Worker`. Domain không tham chiếu EF/HTTP/JWT.
 
